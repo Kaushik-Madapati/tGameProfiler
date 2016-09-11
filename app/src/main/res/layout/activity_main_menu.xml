@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/screen_layout_style">
+
+       <include layout="@layout/statics_reuse_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="366dp"
+        android:layout_gravity="center_horizontal" />
+
+
+        <Button
+            android:id="@+id/btnMainPractice"
+            style="@style/btn_style"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#ffeeff"
+            android:text="@string/btn_practice"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="260dp" />
+
+        <Button
+            android:id="@+id/btnMainTournament"
+            style="@style/btn_style"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#ffeeff"
+            android:text="@string/btn_tournament"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="288dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
+        <!-- view for AdMob Banner Ad -->
+        <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" ads:adSize="BANNER"
+            ads:adUnitId="@string/overall_banner_ad_unit_id" />
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+

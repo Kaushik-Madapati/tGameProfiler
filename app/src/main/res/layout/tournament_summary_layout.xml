@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/screen_layout_style"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        style="@style/header_text_view_style"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewTournaentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30dp" />
+
+    <ListView android:id="@+id/list_tournament_scores"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="2dp"
+        android:background="@drawable/layout_border"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <Button
+        style="@style/btn_style"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="#ffeeff"
+        android:text="@string/btn_new_match"
+        android:id="@+id/btnTournamentNewMatch"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" ads:adSize="BANNER"
+        ads:adUnitId="@string/tournament_banner_ad_unit_id" />
+
+</RelativeLayout>

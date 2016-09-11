@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/screen_layout_style"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:paddingTop="120dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp">
+
+        <EditText
+            android:id="@+id/editTextUserNameToLogin"
+            style="@style/text_view_style"
+            android:hint="Enter User Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPasswordToLogin"
+            style="@style/text_view_style"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            style="@style/btn_style"
+            android:text="@string/btn_sign_in"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+        <RadioButton
+            style="@style/btn_style"
+            android:text="@string/btn_sign_up_guest"
+            android:id="@+id/radioButtonGuestLogin"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            style="@style/btn_style"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#ffeeff"
+            android:text="@string/btn_sign_up"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layoutMainMenu"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp">
+
+        <include layout="@layout/statics_reuse_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+
+
+        <Button
+            android:id="@+id/btnMainPractice"
+            style="@style/btn_style"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#FFeeFF"
+            android:text="@string/btn_practice"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/btnMainTournament"
+            style="@style/btn_style"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#FFeeFF"
+            android:text="@string/btn_tournament"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" ads:adSize="BANNER"
+        ads:adUnitId="@string/overall_banner_ad_unit_id" />
+
+</RelativeLayout>

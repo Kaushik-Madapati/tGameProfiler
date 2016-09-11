@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/screen_layout_style"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+<LinearLayout
+    style="@style/screen_layout_style" >
+
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:hint="Enter User Name"
+        style="@style/edit_view_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+         </EditText>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/edit_view_style"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        style="@style/edit_view_style"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/edit_view_style"
+        android:hint="Enter Email Address"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/buttonSignUpClose"
+        style="@style/btn_style"
+        android:text="Create"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" ads:adSize="BANNER"
+        ads:adUnitId="@string/overall_banner_ad_unit_id" />
+  </RelativeLayout>

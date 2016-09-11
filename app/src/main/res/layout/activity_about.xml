@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/screen_layout_style">
+
+    <TextView
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Version 1.0"
+        android:paddingLeft="50dp"
+        android:id="@+id/textViewVersion" />
+
+
+    <TextView
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="contact : tennisprofiler@gmail.com"
+        android:id="@+id/textViewContact" />
+
+
+
+    <Button
+        style="@style/btn_style"
+        android:text="@string/btn_close"
+        android:id="@+id/btnHelpClose"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</LinearLayout>

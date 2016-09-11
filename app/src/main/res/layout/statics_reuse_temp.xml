@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <TableLayout
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            style="@style/header_text_view_style"
+            android:text="@string/header_summary_missed_shots"
+            android:id="@+id/txtPracticeHeader"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="129dp"
+            android:paddingTop="30dp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="Forehand"
+                android:id="@+id/txtForehand"
+                android:layout_column="0"
+                android:height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:password="false"
+                android:paddingEnd="50dp" />
+
+            <TextView
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtValueForehandValue"
+                android:layout_column="1" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/text_view_style"
+                android:text="Backend"
+                android:id="@+id/txtBackend"
+                android:height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingEnd="50dp" />
+
+            <TextView
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewBackendValue"
+                android:layout_gravity="left|top" />
+        </TableRow>
+        <TableRow>
+              <TextView
+                  style="@style/text_view_style"
+                android:text="Volley"
+                android:id="@+id/txtVolley"
+                  android:height="50dp"
+                android:gravity="center_vertical"
+                  android:layout_gravity="top"
+                  android:paddingEnd="50dp" />
+
+            <TextView
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewVolleyValue"
+                android:layout_gravity="left|top" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/text_view_style"
+                android:text="Serve"
+                android:id="@+id/txtServe"
+                android:layout_gravity="left|bottom"
+                android:height="50dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="50dp" />
+
+            <TextView
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewServeValue"
+                android:layout_gravity="left|bottom" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/text_view_style"
+                android:text="Total balls "
+                android:id="@+id/txtTotalBalls"
+                android:layout_gravity="left|bottom"
+                android:height="50dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="50dp" />
+
+            <TextView
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewTotalBallValue"
+                android:layout_gravity="left|bottom" />
+        </TableRow>
+     </TableLayout>
+
+</FrameLayout>

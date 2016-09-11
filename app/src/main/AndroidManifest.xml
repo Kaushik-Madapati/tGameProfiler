@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tennis.gameprofiler" >
+    android:screenOrientation="portrait"
+    android:theme="@style/AppTheme" >
+    <activity android:name=".start_screen_activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- Include required permissions for Google Mobile Ads to run. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".GameProfilerApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/tennis_icon_transparent"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".start_screen_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".PracticeMenuActivity" >
+        </activity>
+        <activity android:name=".TournamentMainActivity" >
+        </activity>
+        <activity android:name=".NewTournamentActivity" >
+        </activity>
+        <activity android:name=".NewMatchActivity" >
+        </activity>
+        <activity android:name=".PracticeNewSessionActivity" >
+        </activity>
+        <activity android:name=".PracticeSessionSummaryActivity" >
+        </activity>
+        <activity android:name=".TournamentDetailSummaryActivity" >
+        </activity>
+        <activity
+            android:name=".TournamentSummaryActivity"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name=".SignUpActivity" >
+        </activity>
+        <activity android:name=".LoginInfoActivity" >
+        </activity>
+        <activity android:name=".MainMenuActivity" >
+        </activity>
+        <activity android:name=".GameProfilerBaseClass" >
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+    </application>
+
+</manifest>

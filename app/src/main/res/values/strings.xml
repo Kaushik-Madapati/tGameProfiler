@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">tProfiler</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">Add</string>
+    <string name="about">About</string>
+    <string name="reset">Speak</string>
+    <string name="exit">Exit</string>
+    <string name="logout">Logout</string>
+    <string name="btn_practice">"<u>Training  session  </u>   "</string>
+    <string name="btn_tournament">"<u>Tournament </u>  "</string>
+    <string name="btn_new_tournament">"  <u> New Tournament  </u>  "</string>
+    <string name="btn_match">" <u> Match </u>     "</string>
+    <string name="btn_session">"  <u> Practice   Session </u> "</string>
+    <string name="btn_new_session">"<u> New Session </u> "</string>
+    <string name="btn_new_match">" <u> New Match</u> "</string>
+    <string name="btn_save">"  Done  "</string>
+    <string name="btn_close">"  Close  "</string>
+    <string name="btn_add">"  Add  "</string>
+    <string name="btn_sign_in">"   Sign In   "</string>
+    <string name="btn_sign_up">"  <u>Sign Up </u>  "</string>
+    <string name="btn_sign_up_guest">"    Sign Up as Guest     "</string>
+    <string name="btn_more">" <u> More </u> "</string>
+    <string name="header_summary_missed_shots"> "Summary of missed shots"</string>
+    <string name="btn_done">"  Done  "</string>
+    <string name="tournament_banner_ad_unit_id">ca-app-pub-5611500387197261/3477076835</string>
+    <string name="overall_banner_ad_unit_id">ca-app-pub-5611500387197261/9523610435</string>
+    <string name="practice_banner_ad_unit_id">ca-app-pub-5611500387197261/6430543233</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+
+
+</resources>

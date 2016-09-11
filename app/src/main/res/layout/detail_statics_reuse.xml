@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_gravity="left|top">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forehand"
+                android:id="@+id/txtForehand"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtValueForehandValue"
+                android:layout_gravity="left|top"
+                android:layout_column="1" />
+
+
+        </TableRow>
+
+       <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Backend"
+                android:id="@+id/txtBackend"
+                android:layout_gravity="left|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewBackendValue"
+                android:layout_gravity="left|bottom" />
+
+       </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volley"
+                android:id="@+id/txtVolley"
+                android:layout_gravity="left|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewVolleyValue"
+                android:layout_gravity="left|bottom" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serve"
+                android:id="@+id/txtServe"
+                android:layout_gravity="left|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewServeValue"
+                android:layout_gravity="left|bottom" />
+
+        </TableRow>
+     </TableLayout>
+
+</FrameLayout>

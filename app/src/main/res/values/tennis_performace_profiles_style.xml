@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+       <style name= "btn_style" parent="ButtonAppTheme">
+         <item name = "android:layout_width">wrap_content</item>
+         <item name = "android:layout_height">wrap_content</item>
+           <item name = "android:layout_gravity">center_horizontal</item>
+         <item name = "android:textSize">20dip</item>
+           <item name = "android:background">@drawable/round_button</item>
+
+
+	   </style>
+       <style name= "screen_layout_style">
+           <item name = "android:layout_width">match_parent</item>
+           <item name = "android:layout_height">match_parent</item>
+           <item name = "android:gravity">center_vertical</item>
+           <item name = "android:orientation">vertical</item>
+           <item name = "android:background">@drawable/backgroud_org_png_480x800</item>
+       </style>
+       <style name= "text_view_style" >
+           <item name = "android:layout_width">match_parent</item>
+           <item name = "android:layout_height">wrap_content</item>
+           <item name = "android:textColor">#ffeeff</item>
+           <item name = "android:textColorHint">#ffeeff</item>
+           <item name = "android:textSize">20dp</item>
+       </style>
+    <style name= "edit_view_style" parent="EditTextAppTheme">
+        <item name = "android:layout_width">match_parent</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:textColor">#ffFFff</item>
+        <item name = "android:textColorHint">#ffeeff</item>
+        <item name = "android:textSize">20dp</item>
+    </style>
+       <style name= "header_text_view_style">
+           <item name = "android:layout_width">fill_parent</item>
+           <item name = "android:layout_height">wrap_content</item>
+           <item name = "android:textAlignment">center</item>
+           <item name = "android:textColor">#ffeeff</item>
+           <item name = "android:textSize">30dp</item>
+       </style>
+    <style name= "combo_box_style" parent="SpinnerItemAppTheme">
+        <item name = "android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:textColor">#ffffff</item>
+        <item name = "android:textSize">20dp</item>
+    </style>
+    <style name= "dynamic_btn_style" >
+        <item name = "android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_gravity">center_horizontal</item>
+        <item name = "android:textSize">20dip</item>
+        <item name = "android:background">@drawable/round_button</item>
+
+
+    </style>
+
+</resources>

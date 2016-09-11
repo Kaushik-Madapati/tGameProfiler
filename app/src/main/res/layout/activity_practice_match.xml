@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/screen_layout_style"
+    android:weightSum="1"
+    android:layout_width="fill_parent">
+
+
+    <include layout="@layout/new_match_reuse" />
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Final Score"
+        android:id="@+id/editTextFinalScore"
+        android:layout_below="@+id/textViewFinalScore"
+        android:layout_toEndOf="@+id/textViewFinalScore"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextMatchName"
+        android:layout_below="@+id/txtViewMatchName"
+        android:layout_alignEnd="@+id/txtViewMatchName"
+        android:hint="Enter match name"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextComments"
+        android:layout_below="@+id/txtValueComments"
+        android:layout_toEndOf="@+id/editTextMatchName"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter Comments" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+        <!-- view for AdMob Banner Ad -->
+        <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="match_parent"
+            android:layout_height="71dp" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" ads:adSize="BANNER"
+            ads:adUnitId="@string/practice_banner_ad_unit_id" />
+    </LinearLayout>
+
+
+</LinearLayout>

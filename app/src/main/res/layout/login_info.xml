@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/screen_layout_style"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+    style="@style/screen_layout_style">
+
+
+    <EditText
+        style="@style/edit_view_style"
+        android:id="@+id/editTextUserNameToLogin"
+        android:hint="Enter User Name"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPasswordToLogin"
+        style="@style/edit_view_style"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        style="@style/btn_style"
+        android:text="@string/btn_sign_in"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        style="@style/btn_style"
+        android:text="@string/btn_sign_up"
+        android:layout_gravity="center_horizontal" />
+
+    <RadioButton
+        style="@style/btn_style"
+        android:text="Sign in  as guest"
+        android:id="@+id/radioButtonGuestLogin"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+
+        <!-- view for AdMob Banner Ad -->
+        <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="match_parent"
+            android:layout_height="67dp" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" ads:adSize="BANNER"
+            ads:adUnitId="@string/overall_banner_ad_unit_id" />
+
+
+
+</RelativeLayout>

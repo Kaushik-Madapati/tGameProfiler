@@ -1,0 +1,163 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tblLayoutNewMatch"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+         android:layout_width="wrap_content"
+         android:id="@+id/summary_tile"
+         android:layout_gravity="center_horizontal"
+         android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/header_text_view_style"
+            android:text="No. of shots  "
+            android:id="@+id/txtPracticeHeader"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp" />
+        <ToggleButton
+            style="@style/ToggleAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/no_missed_good"
+            android:layout_gravity="left|top"
+            android:checked="false"
+            android:textOff="Good"
+            android:textOn="Missed"
+            android:textSize="20dp"
+            android:background="@drawable/round_button" />
+
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:id="@+id/tblRowNewMatch"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="Forehand"
+                android:id="@+id/txtForehand"
+                android:layout_column="0"
+                android:paddingEnd="40dp"
+                android:phoneNumber="true"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtForehandValue"
+                android:layout_column="1"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="@style/btn_style"
+                android:text="@string/btn_add"
+                android:id="@+id/btnForehandAdd"
+                android:layout_column="2"
+                android:layout_width="wrap_content" />
+        </TableRow>
+
+       <TableRow>
+            <TextView
+                style="@style/text_view_style"
+                android:text="Backend"
+                android:id="@+id/txtBackend"
+                android:paddingEnd="40dp"
+                android:password="false" />
+
+
+            <EditText
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewBackendValue"
+                android:layout_gravity="left|bottom"
+                android:paddingEnd="30dp" />
+
+           <Button
+               style="@style/btn_style"
+               android:text="@string/btn_add"
+               android:id="@+id/btnBackendAdd"
+               android:layout_gravity="center_horizontal|bottom" />
+       </TableRow>
+        <TableRow >
+            <TextView
+                style="@style/text_view_style"
+                android:text="Volley"
+                android:id="@+id/txtVolley"
+                android:paddingEnd="40dp" />
+
+            <EditText
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewVolleyValue"
+                android:layout_gravity="left|bottom"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="@style/btn_style"
+                android:text="@string/btn_add"
+                android:id="@+id/btnVolleyAdd"
+                android:layout_gravity="center_horizontal|bottom" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/text_view_style"
+                android:text="Serve"
+                android:id="@+id/txtServe"
+                android:paddingEnd="40dp" />
+
+            <EditText
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewServeValue"
+                android:layout_gravity="left|bottom"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="@style/btn_style"
+                android:text="@string/btn_add"
+                android:id="@+id/btnServeAdd"
+                android:layout_gravity="center_horizontal|bottom" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/text_view_style"
+                android:text="TotalBalls"
+                android:id="@+id/txtTotalBalls"
+                android:paddingEnd="40dp" />
+
+            <EditText
+                style="@style/text_view_style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:id="@+id/txtViewTotalBallsValue"
+                android:layout_gravity="left|bottom"
+                android:paddingEnd="30dp" />
+
+            <Button
+                style="@style/btn_style"
+                android:text="@string/btn_add"
+                android:id="@+id/btnTotalBallAdd"
+                android:layout_gravity="center_horizontal|bottom" />
+        </TableRow>
+     </TableLayout>
+
+
+
+</FrameLayout>
